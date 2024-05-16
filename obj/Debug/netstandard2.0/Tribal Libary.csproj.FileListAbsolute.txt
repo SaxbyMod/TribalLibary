@@ -1,0 +1,12 @@
+C:\Users\Thinc\source\repos\TribalLibary\bin\Debug\netstandard2.0\ATribalLibary.deps.json
+C:\Users\Thinc\source\repos\TribalLibary\bin\Debug\netstandard2.0\ATribalLibary.dll
+C:\Users\Thinc\source\repos\TribalLibary\bin\Debug\netstandard2.0\ATribalLibary.pdb
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\Tribal Libary.csproj.AssemblyReference.cache
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\PluginInfo.cs
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\Tribal Libary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\Tribal Libary.AssemblyInfoInputs.cache
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\Tribal Libary.AssemblyInfo.cs
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\Tribal Libary.csproj.CoreCompileInputs.cache
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\Tribal Libary.sourcelink.json
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\ATribalLibary.dll
+C:\Users\Thinc\source\repos\TribalLibary\obj\Debug\netstandard2.0\ATribalLibary.pdb

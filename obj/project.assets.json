@@ -2907,26 +2907,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thinc\\.nuget\\packages\\": {}
+    "C:\\Users\\Thinc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thinc\\source\\repos\\InscryptionExampleMod\\ExampleMod.csproj",
+      "projectUniqueName": "C:\\Users\\Thinc\\source\\repos\\TribalLibary\\Tribal Libary.csproj",
       "projectName": "ATribalLibary",
-      "projectPath": "C:\\Users\\Thinc\\source\\repos\\InscryptionExampleMod\\ExampleMod.csproj",
+      "projectPath": "C:\\Users\\Thinc\\source\\repos\\TribalLibary\\Tribal Libary.csproj",
       "packagesPath": "C:\\Users\\Thinc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thinc\\source\\repos\\InscryptionExampleMod\\obj\\",
+      "outputPath": "C:\\Users\\Thinc\\source\\repos\\TribalLibary\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Thinc\\source\\repos\\InscryptionExampleMod\\NuGet.Config",
-        "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Thinc\\source\\repos\\TribalLibary\\NuGet.Config",
+        "C:\\Users\\Thinc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.bepinex.dev/v3/index.json": {},
         "https://nuget.windows10ce.com/nuget/v3/index.json": {}
@@ -2941,6 +2947,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2995,7 +3006,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

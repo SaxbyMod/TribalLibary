@@ -2,6 +2,7 @@ using BepInEx;
 using DiskCardGame;
 using InscryptionAPI.Card;
 using InscryptionAPI.Helpers;
+using Steamworks;
 
 namespace TribalLibary
 {
@@ -13,17 +14,20 @@ namespace TribalLibary
 
         private const string PluginGuid = "tribes.libary";
         private const string PluginName = "ATribalLibary";
-        private const string PluginVersion = "2.0.0";
+        private const string PluginVersion = "2.1.0";
 
         public static Tribe abominationTribe;
         public static Tribe amphibianTribe;
         public static Tribe androidTribe;
         public static Tribe cellsTribe;
+        public static Tribe ceremorphTribe;
         public static Tribe chessTribe;
+        public static Tribe conduitsTribe;
         public static Tribe cryptidTribe;
         public static Tribe fairyTribe;
         public static Tribe felineTribe;
         public static Tribe fishTribe;
+        public static Tribe fleshyTribe;
         public static Tribe fungusTribe;
         public static Tribe gemsTribe;
         public static Tribe guardianTribe;
@@ -40,11 +44,15 @@ namespace TribalLibary
         public static Tribe plantTribe;
         public static Tribe possessedTribe;
         public static Tribe rodentTribe;
+        public static Tribe scholarTribe;
+        public static Tribe securityTribe;
         public static Tribe shapelessTribe;
         public static Tribe shapeshifterTribe;
+        public static Tribe skeletalTribe;
+        public static Tribe spectralTribe;
         public static Tribe stoneTribe;
+        public static Tribe utilityTribe;
         public static Tribe wingedbeastTribe;
-        public static Tribe zombieTribe;
 
         public void Awake()
         {
@@ -60,7 +68,11 @@ namespace TribalLibary
             i++;
             cellsTribe = TribeManager.Add(PluginGuid, "cells", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_cells.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_TECH_cells.png"));
             i++;
+            ceremorphTribe = TribeManager.Add(PluginGuid, "ceremorph", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_ceremorph.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_MAGIKS_ceremorph.png"));
+            i++;
             chessTribe = TribeManager.Add(PluginGuid, "chess", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_chess.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_TECH_chess.png"));
+            i++;
+            conduitsTribe = TribeManager.Add(PluginGuid, "conduits", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_conduits.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_TECH_conduits.png"));
             i++;
             cryptidTribe = TribeManager.Add(PluginGuid, "cryptid", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_cryptid.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_UNDEAD_cryptid.png"));
             i++;
@@ -69,6 +81,8 @@ namespace TribalLibary
             felineTribe = TribeManager.Add(PluginGuid, "feline", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_feline.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_NATURE_feline.png"));
             i++;
             fishTribe = TribeManager.Add(PluginGuid, "fish", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_fish.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_NATURE_fish.png"));
+            i++;
+            fleshyTribe = TribeManager.Add(PluginGuid, "fleshy", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_zombie.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_UNDEAD_zombie.png"));
             i++;
             fungusTribe = TribeManager.Add(PluginGuid, "fungus", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_fungus.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_BASIC_fungus.png"));
             i++;
@@ -102,16 +116,25 @@ namespace TribalLibary
             i++;
             rodentTribe = TribeManager.Add(PluginGuid, "rodent", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_rodent.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_NATURE_rodent.png"));
             i++;
+            scholarTribe = TribeManager.Add(PluginGuid, "scholar", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_scholar.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_MAGIKS_scholar.png"));
+            i++;
+            securityTribe = TribeManager.Add(PluginGuid, "security", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_security.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_TECH_security.png"));
+            i++;
             shapelessTribe = TribeManager.Add(PluginGuid, "shapeless", TextureHelper.GetImageAsTexture("tribeicon_shapeless.png"), true, TextureHelper.GetImageAsTexture("card_rewardback_BASIC_shapeless.png"));
             i++;
             shapeshifterTribe = TribeManager.Add(PluginGuid, "shapeshifter", TextureHelper.GetImageAsTexture("tribeicon_shapeshifter.png"), true, TextureHelper.GetImageAsTexture("card_rewardback_MAGIKS_shapeshifter.png"));
             i++;
+            skeletalTribe = TribeManager.Add(PluginGuid, "skeletal", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_skeletal.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_UNDEAD_skeletal.png"));
+            i++;
+            spectralTribe = TribeManager.Add(PluginGuid, "spectral", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_spectral.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_UNDEAD_spectral.png"));
+            i++;
             stoneTribe = TribeManager.Add(PluginGuid, "stone", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_stone.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_BASIC_stone.png"));
+            i++;
+            utilityTribe = TribeManager.Add(PluginGuid, "utility", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_utility.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_TECH_utility.png"));
             i++;
             wingedbeastTribe = TribeManager.Add(PluginGuid, "wingedbeast", TextureHelper.GetImageAsTexture("tribeicon_wingedbeast.png"), true, TextureHelper.GetImageAsTexture("card_rewardback_NATURE_wingedbeast.png"));
             i++;
-            zombieTribe = TribeManager.Add(PluginGuid, "zombie", tribeIcon: TextureHelper.GetImageAsTexture("tribeicon_zombie.png"), appearInTribeChoices: true, choiceCardbackTexture: TextureHelper.GetImageAsTexture("card_rewardback_UNDEAD_zombie.png"));
-            i++;
+
             Logger.LogInfo($"Sucsessfully Loaded {i} tribe(s)!");
         }
     }

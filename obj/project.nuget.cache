@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1bmjjQKIeYvBv9yNtStUt7K+NlEKsOXEiEJijTPQxFPfi7c9SvH0uYWS3da3PZVzyqjXqNIxo6loXCoQMTQF/A==",
+  "dgSpecHash": "8h0fBLnxpZK56N8LcO6iQNAcISyFEDvQco804X3Oh77S8IqRjQd9XXzlreLtXz8oY5bWunI3BQAdEoJ9sZLKyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Thinc\\source\\repos\\InscryptionExampleMod\\ExampleMod.csproj",
+  "projectFilePath": "C:\\Users\\Thinc\\source\\repos\\TribalLibary\\Tribal Libary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thinc\\.nuget\\packages\\api_dev-api\\2.4.0\\api_dev-api.2.4.0.nupkg.sha512",
     "C:\\Users\\Thinc\\.nuget\\packages\\bepinex-monomod_loader_inscryption\\1.0.0\\bepinex-monomod_loader_inscryption.1.0.0.nupkg.sha512",

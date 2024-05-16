@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "ATribalLibary/2.0.0": {
+      "ATribalLibary/2.1.0": {
         "dependencies": {
           "API_dev-API": "2.4.0",
           "BepInEx-MonoMod_Loader_Inscryption": "1.0.0",
@@ -443,7 +443,7 @@
     }
   },
   "libraries": {
-    "ATribalLibary/2.0.0": {
+    "ATribalLibary/2.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

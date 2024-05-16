@@ -1,4 +1,4 @@
-namespace ExampleMod
+namespace Tribal_Libary
 {
     public static class PluginInfo
     {
