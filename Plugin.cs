@@ -9,9 +9,7 @@ namespace TribalLibary
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("cyantist.inscryption.api", BepInDependency.DependencyFlags.HardDependency)]
     public class Plugin : BaseUnityPlugin
-
     {
-
         private const string PluginGuid = "tribes.libary";
         private const string PluginName = "ATribalLibary";
         private const string PluginVersion = "2.1.0";

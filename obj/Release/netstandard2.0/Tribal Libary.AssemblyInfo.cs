@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A Libary of Tribes")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0+c1792eac24c17c94b16d4e7fcd760bd53dfdda2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0+a29b7f93ca47534511d1de1aaea57c77fddef1f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ATribalLibary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ATribalLibary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.1.0.0")]
